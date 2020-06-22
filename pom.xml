@@ -17,6 +17,8 @@
     <modules>
         <module>eurekaserver</module>
         <module>eurekaclient</module>
+        <module>eurekaserver8762</module>
+        <module>payment</module>
     </modules>
 
     <properties>
