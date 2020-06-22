@@ -16,7 +16,7 @@ public class EurekaclientApplication {
     }
 
     @Bean
-    @LoadBalanced
+    @LoadBalanced   // 此处必须加LoadBalanced注解，因为调用时使用的是服务名，而不是ip:port方式
     RestTemplate restTemplate() {
         return new RestTemplate();
     }
