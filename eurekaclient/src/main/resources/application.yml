@@ -9,3 +9,7 @@ eureka:
 spring:
   application:
     name: eureka-client
+
+feign:
+  hystrix:
+    enabled: true   # feign开启hystrix必须添加的参数
