@@ -1,6 +1,6 @@
 package com.yang.eurekaclient.rest;
 
-import com.yang.eurekaclient.entity.vo.Payment;
+import com.yang.api.entity.vo.Payment;
 import com.yang.eurekaclient.service.PaymentFeignClient;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.RequestMapping;

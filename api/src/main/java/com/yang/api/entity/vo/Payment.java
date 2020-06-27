@@ -1,4 +1,4 @@
-package com.yang.eurekaclient.entity.vo;
+package com.yang.api.entity.vo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

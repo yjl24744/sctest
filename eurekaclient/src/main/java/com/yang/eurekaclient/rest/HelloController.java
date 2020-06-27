@@ -1,6 +1,6 @@
 package com.yang.eurekaclient.rest;
 
-import com.yang.eurekaclient.entity.vo.Payment;
+import com.yang.api.entity.vo.Payment;
 import com.yang.eurekaclient.service.PaymentFeignClient;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

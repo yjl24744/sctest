@@ -1,6 +1,6 @@
 package com.yang.eurekaclient.service;
 
-import com.yang.eurekaclient.entity.vo.Payment;
+import com.yang.api.entity.vo.Payment;
 import com.yang.eurekaclient.rest.FallbackPaymentController;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
