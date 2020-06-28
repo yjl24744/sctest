@@ -1,9 +1,6 @@
 package com.yang.payment.rest;
 
-import com.yang.payment.entity.vo.Payment;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
+import com.yang.api.entity.vo.Payment;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
