@@ -9,9 +9,9 @@ spring:
 
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://
+    url: jdbc:mysql://49.233.90.226:3306/springsecurity?useSSL=true&useUnicode=true&characterEncoding=UTF-8
     username: root
-    password: 123456
+    password: YangJianLei@19930429
 
   jpa:
     hibernate:

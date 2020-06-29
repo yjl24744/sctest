@@ -92,8 +92,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
         /**
          * 修改配置，让Security从数据库中读取，而不是之前从内存中读取
+         * java.lang.IllegalArgumentException: There is no PasswordEncoder mapped for the id "null"
          * */
-        auth.userDetailsService(userDetailsService);
+        auth.userDetailsService(userDetailsService).passwordEncoder(new MyPasswordEncoder());
     }
 
     /*
