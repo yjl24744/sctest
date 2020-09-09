@@ -1,6 +1,7 @@
 package com.yang.consumer.rest;
 
 import com.yang.consumer.entity.vo.Payment;
+import com.yang.consumer.service.PaymentService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,11 +18,20 @@ public class ConsumerController {
 
     @Autowired
     private RestTemplate restTemplate;
+    @Autowired
+    private PaymentService paymentService;
 
-    @GetMapping("/consumer/${name}")
-    public Payment consumer(@PathVariable String name) {
-        Payment payment = restTemplate.getForEntity(REMOTE_URI + name, Payment.class).getBody();
-        log.info("名字为" + name);
+    // @GetMapping("/consumer/${name}")
+    // public Payment consumer(@PathVariable String name) {
+    //     Payment payment = restTemplate.getForEntity(REMOTE_URI + name, Payment.class).getBody();
+    //     log.info("名字为" + name);
+    //     return payment;
+    // }
+
+    @RequestMapping("/cosumer/get")
+    public Payment getPayment() {
+        Payment payment = paymentService.getPayment();
+        log.info(payment.toString());
         return payment;
     }
 }

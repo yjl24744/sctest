@@ -1,0 +1,17 @@
+server:
+  port: 8085
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+spring:
+  application:
+    name: consumer
+
+
+#开启熔断
+feign:
+  hystrix:
+    enabled: true
